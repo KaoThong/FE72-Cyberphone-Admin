@@ -41,12 +41,12 @@ function renderProducts(data) {
               <td>${data[i].type}</td>
               <td>${data[i].desc}</td>
               <td>
+              <button onclick="getProduct(${
+                data[i].id
+              })" class="btn btn-success">Cập nhật</button>
                   <button onclick="deleteProduct('${
                     data[i].id
                   }')" class="btn btn-danger">Xoá</button>
-                  <button onclick="getProduct(${
-                    data[i].id
-                  })" class="btn btn-success">Cập nhật</button>
               </td>
           </tr>
       `;
